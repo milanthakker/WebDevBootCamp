@@ -1,0 +1,26 @@
+body {
+  background-color: #232323;
+}
+
+.controlbar {
+  background-color: white;
+}
+
+.jumbotron {
+  background-color: RGB(138, 186, 211);
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.square {
+  border-radius: 15px;
+  background-color: white;
+  width: 30%;
+  padding-top: 30%;
+  margin: 1%;;
+}
+
+.hoveredMilan {
+  font-style: italic;
+  text-color: grey;
+}
