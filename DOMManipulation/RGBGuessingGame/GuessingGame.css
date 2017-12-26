@@ -1,3 +1,12 @@
+/*@keyframes color_change {
+    0%  { background-color: inherit; }
+    100% { background-color: #232323; }
+}
+@-webkit-keyframes color_change {
+    0% { background-color: inherit; }
+    100% { background-color: #232323; }
+}*/
+
 body {
   background-color: #232323;
 }
@@ -20,7 +29,27 @@ body {
   margin: 1%;;
 }
 
-.hoveredMilan {
+.square {
+  border-radius: 15px;
+  background-color: white;
+  width: 30%;
+  padding-top: 30%;
+  margin: 1%;;
+}
+
+.hovered {
   font-style: italic;
-  text-color: grey;
+  color: white;
+  background-color: RGB(138, 186, 211);
+}
+
+.selected {
+  color: white;
+  background-color: RGB(138, 186, 211);
+}
+.square.hidden {
+  background-color: #232323 !important;
+  color: #232323 !important;
+  /*animation: color_change;
+  animation-duration: 2s;*/
 }
