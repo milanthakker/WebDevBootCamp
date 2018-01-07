@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(to right, rgb(0, 150, 200), rgb(0, 150, 150));
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  background-color: #2980b9;
+  color: white;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+li:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+li:nth-child(odd) {
+  background-color: #bdc3c7;
+}
+
+.container {
+  /*border: 1px solid white;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding: 0;
+  width: 40%;
+}
+
+.delete {
+  display:  none;
+  background-color: red;
+  margin-left: 0;
+  padding: 10px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.todo {
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 0px;
+  margin: 0;
+}
+
+.completed {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.test {
+  background-color: purple;
+}
