@@ -6,20 +6,7 @@ $('.list').on('click', 'span', function (event) {
   });
 });
 
-$('.list').on('mouseenter', 'li', function (event) {
-  $(this).children().toggle();
-  event.stopPropagation();
-});
-
-$('.list').on('mouseleave', 'li', function (event) {
-  $(this).children().toggle();
-  event.stopPropagation();
-});
-
-// $('.list').on('mouseover', 'span', function (event) {
-//   event.stopPropagation();
-//   $(this).
-// }
+$('.plusButton').click(toggleInput);
 
 $('input').keypress(function (event) {
   if (event.which === 13) {
@@ -31,13 +18,12 @@ function markAsDone() {
   $(this).toggleClass('completed');
 }
 
-// function deleteItem() {
-//   event.stopPropagation();
-//   $(this).parent().fadeOut(500, function () {$(this).remove();});
-// }
+function toggleInput() {
+  $('input').fadeToggle();
+}
 
 function addToDo(toDoText) {
-  var deleteButton = $('<span>').text('X ');
+  var deleteButton = $('<span><i class="fa fa-trash-o" aria-hidden="true"></i><span>');
   deleteButton.addClass('delete');
 
   var addedToDo = $('<li>').text(toDoText);
